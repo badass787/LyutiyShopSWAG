@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ohranik));
             pictureBox1 = new PictureBox();
             label1 = new Label();
             button1 = new Button();
@@ -36,6 +37,7 @@
             // 
             // pictureBox1
             // 
+            pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
             pictureBox1.Location = new Point(29, 58);
             pictureBox1.Name = "pictureBox1";
             pictureBox1.Size = new Size(598, 437);

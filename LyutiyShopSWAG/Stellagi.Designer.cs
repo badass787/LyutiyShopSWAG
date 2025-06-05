@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Shelves));
             tomato = new PictureBox();
             cucumber = new PictureBox();
             cabbage = new PictureBox();
@@ -82,73 +83,91 @@
             // 
             // tomato
             // 
+            tomato.Image = (Image)resources.GetObject("tomato.Image");
             tomato.Location = new Point(73, 106);
             tomato.Name = "tomato";
             tomato.Size = new Size(125, 62);
+            tomato.SizeMode = PictureBoxSizeMode.StretchImage;
             tomato.TabIndex = 0;
             tomato.TabStop = false;
             // 
             // cucumber
             // 
+            cucumber.Image = (Image)resources.GetObject("cucumber.Image");
             cucumber.Location = new Point(373, 106);
             cucumber.Name = "cucumber";
             cucumber.Size = new Size(125, 62);
+            cucumber.SizeMode = PictureBoxSizeMode.StretchImage;
             cucumber.TabIndex = 1;
             cucumber.TabStop = false;
             // 
             // cabbage
             // 
+            cabbage.Image = (Image)resources.GetObject("cabbage.Image");
             cabbage.Location = new Point(660, 227);
             cabbage.Name = "cabbage";
             cabbage.Size = new Size(125, 62);
+            cabbage.SizeMode = PictureBoxSizeMode.StretchImage;
             cabbage.TabIndex = 2;
             cabbage.TabStop = false;
             // 
             // onion
             // 
+            onion.Image = (Image)resources.GetObject("onion.Image");
             onion.Location = new Point(373, 227);
             onion.Name = "onion";
             onion.Size = new Size(125, 62);
+            onion.SizeMode = PictureBoxSizeMode.StretchImage;
             onion.TabIndex = 3;
             onion.TabStop = false;
             // 
             // carrot
             // 
+            carrot.Image = (Image)resources.GetObject("carrot.Image");
             carrot.Location = new Point(73, 227);
             carrot.Name = "carrot";
             carrot.Size = new Size(125, 62);
+            carrot.SizeMode = PictureBoxSizeMode.StretchImage;
             carrot.TabIndex = 4;
             carrot.TabStop = false;
             // 
             // tomatoes
             // 
+            tomatoes.Image = (Image)resources.GetObject("tomatoes.Image");
             tomatoes.Location = new Point(73, 362);
             tomatoes.Name = "tomatoes";
             tomatoes.Size = new Size(125, 62);
+            tomatoes.SizeMode = PictureBoxSizeMode.StretchImage;
             tomatoes.TabIndex = 5;
             tomatoes.TabStop = false;
             // 
             // potatoes
             // 
+            potatoes.Image = (Image)resources.GetObject("potatoes.Image");
             potatoes.Location = new Point(373, 362);
             potatoes.Name = "potatoes";
             potatoes.Size = new Size(125, 62);
+            potatoes.SizeMode = PictureBoxSizeMode.StretchImage;
             potatoes.TabIndex = 6;
             potatoes.TabStop = false;
             // 
             // carrots
             // 
+            carrots.Image = (Image)resources.GetObject("carrots.Image");
             carrots.Location = new Point(660, 362);
             carrots.Name = "carrots";
             carrots.Size = new Size(125, 62);
+            carrots.SizeMode = PictureBoxSizeMode.StretchImage;
             carrots.TabIndex = 7;
             carrots.TabStop = false;
             // 
             // potato
             // 
+            potato.Image = (Image)resources.GetObject("potato.Image");
             potato.Location = new Point(660, 106);
             potato.Name = "potato";
             potato.Size = new Size(125, 62);
+            potato.SizeMode = PictureBoxSizeMode.StretchImage;
             potato.TabIndex = 8;
             potato.TabStop = false;
             // 
@@ -170,6 +189,7 @@
             leaveToKassaButton.TabIndex = 10;
             leaveToKassaButton.Text = "Уйти";
             leaveToKassaButton.UseVisualStyleBackColor = true;
+            leaveToKassaButton.Click += leaveToKassaButton_Click;
             // 
             // label1
             // 
@@ -190,6 +210,7 @@
             minusTomato.TabIndex = 12;
             minusTomato.Text = "-";
             minusTomato.UseVisualStyleBackColor = true;
+            minusTomato.Click += minusTomato_Click;
             // 
             // plusTomato
             // 
@@ -200,7 +221,7 @@
             plusTomato.TabIndex = 13;
             plusTomato.Text = "+";
             plusTomato.UseVisualStyleBackColor = true;
-            plusTomato.Click += this.button2_Click;
+            plusTomato.Click += plusTomato_Click;
             // 
             // minusOnion
             // 
@@ -211,6 +232,7 @@
             minusOnion.TabIndex = 14;
             minusOnion.Text = "-";
             minusOnion.UseVisualStyleBackColor = true;
+            minusOnion.Click += minusOnion_Click;
             // 
             // plusOnion
             // 
@@ -221,6 +243,7 @@
             plusOnion.TabIndex = 15;
             plusOnion.Text = "+";
             plusOnion.UseVisualStyleBackColor = true;
+            plusOnion.Click += plusOnion_Click;
             // 
             // plusCucumber
             // 
@@ -231,6 +254,7 @@
             plusCucumber.TabIndex = 16;
             plusCucumber.Text = "+";
             plusCucumber.UseVisualStyleBackColor = true;
+            plusCucumber.Click += plusCucumber_Click;
             // 
             // plusCarrot
             // 
@@ -241,6 +265,7 @@
             plusCarrot.TabIndex = 17;
             plusCarrot.Text = "+";
             plusCarrot.UseVisualStyleBackColor = true;
+            plusCarrot.Click += plusCarrot_Click;
             // 
             // plusCabbage
             // 
@@ -251,6 +276,7 @@
             plusCabbage.TabIndex = 18;
             plusCabbage.Text = "+";
             plusCabbage.UseVisualStyleBackColor = true;
+            plusCabbage.Click += plusCabbage_Click;
             // 
             // plusPotato
             // 
@@ -261,6 +287,7 @@
             plusPotato.TabIndex = 19;
             plusPotato.Text = "+";
             plusPotato.UseVisualStyleBackColor = true;
+            plusPotato.Click += plusPotato_Click;
             // 
             // plusTomatoes
             // 
@@ -271,6 +298,7 @@
             plusTomatoes.TabIndex = 20;
             plusTomatoes.Text = "+";
             plusTomatoes.UseVisualStyleBackColor = true;
+            plusTomatoes.Click += plusTomatoes_Click;
             // 
             // plusPotatoes
             // 
@@ -281,6 +309,7 @@
             plusPotatoes.TabIndex = 21;
             plusPotatoes.Text = "+";
             plusPotatoes.UseVisualStyleBackColor = true;
+            plusPotatoes.Click += plusPotatoes_Click;
             // 
             // plusCarrots
             // 
@@ -291,6 +320,7 @@
             plusCarrots.TabIndex = 22;
             plusCarrots.Text = "+";
             plusCarrots.UseVisualStyleBackColor = true;
+            plusCarrots.Click += plusCarrots_Click;
             // 
             // minusCarrot
             // 
@@ -301,6 +331,7 @@
             minusCarrot.TabIndex = 23;
             minusCarrot.Text = "-";
             minusCarrot.UseVisualStyleBackColor = true;
+            minusCarrot.Click += minusCarrot_Click;
             // 
             // minusCucumber
             // 
@@ -311,6 +342,7 @@
             minusCucumber.TabIndex = 24;
             minusCucumber.Text = "-";
             minusCucumber.UseVisualStyleBackColor = true;
+            minusCucumber.Click += minusCucumber_Click;
             // 
             // minusPotato
             // 
@@ -321,6 +353,7 @@
             minusPotato.TabIndex = 25;
             minusPotato.Text = "-";
             minusPotato.UseVisualStyleBackColor = true;
+            minusPotato.Click += minusPotato_Click;
             // 
             // minusCabbage
             // 
@@ -331,6 +364,7 @@
             minusCabbage.TabIndex = 26;
             minusCabbage.Text = "-";
             minusCabbage.UseVisualStyleBackColor = true;
+            minusCabbage.Click += minusCabbage_Click;
             // 
             // minusTomatoes
             // 
@@ -341,6 +375,7 @@
             minusTomatoes.TabIndex = 27;
             minusTomatoes.Text = "-";
             minusTomatoes.UseVisualStyleBackColor = true;
+            minusTomatoes.Click += minusTomatoes_Click;
             // 
             // minusPotatoes
             // 
@@ -351,6 +386,7 @@
             minusPotatoes.TabIndex = 28;
             minusPotatoes.Text = "-";
             minusPotatoes.UseVisualStyleBackColor = true;
+            minusPotatoes.Click += minusPotatoes_Click;
             // 
             // minusCarrots
             // 
@@ -361,6 +397,7 @@
             minusCarrots.TabIndex = 29;
             minusCarrots.Text = "-";
             minusCarrots.UseVisualStyleBackColor = true;
+            minusCarrots.Click += minusCarrots_Click;
             // 
             // tomatoLabel
             // 
@@ -441,7 +478,6 @@
             potatoesLabel.Size = new Size(33, 40);
             potatoesLabel.TabIndex = 45;
             potatoesLabel.Text = "0";
-            potatoesLabel.Click += this.label2_Click;
             // 
             // carrotsLabel
             // 
@@ -499,6 +535,7 @@
             Controls.Add(tomato);
             Name = "Shelves";
             Text = "Стеллажи";
+            Load += Shelves_Load;
             ((System.ComponentModel.ISupportInitialize)tomato).EndInit();
             ((System.ComponentModel.ISupportInitialize)cucumber).EndInit();
             ((System.ComponentModel.ISupportInitialize)cabbage).EndInit();
