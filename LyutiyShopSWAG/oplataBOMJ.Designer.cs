@@ -66,6 +66,7 @@
             // 
             // pictureBox1
             // 
+            pictureBox1.ImageLocation = "C:\\Users\\Jopa\\source\\repos\\LyutiyShopSWAG\\LyutiyShopSWAG\\data\\cassier.jpg";
             pictureBox1.Location = new Point(22, 82);
             pictureBox1.Name = "pictureBox1";
             pictureBox1.Size = new Size(571, 366);

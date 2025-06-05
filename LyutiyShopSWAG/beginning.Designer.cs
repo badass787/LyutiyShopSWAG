@@ -35,6 +35,7 @@
             // 
             // pictureBox1
             // 
+            pictureBox1.ImageLocation = "C:\\Users\\Jopa\\source\\repos\\LyutiyShopSWAG\\LyutiyShopSWAG\\data\\outside.jpg";
             pictureBox1.Location = new Point(0, 0);
             pictureBox1.Name = "pictureBox1";
             pictureBox1.Size = new Size(800, 500);

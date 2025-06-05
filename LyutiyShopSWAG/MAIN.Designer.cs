@@ -64,6 +64,7 @@
             // 
             // entry
             // 
+            entry.ImageLocation = "C:\\Users\\Jopa\\source\\repos\\LyutiyShopSWAG\\LyutiyShopSWAG\\data\\entry.jpg";
             entry.Location = new Point(64, 9);
             entry.Name = "entry";
             entry.Size = new Size(796, 502);

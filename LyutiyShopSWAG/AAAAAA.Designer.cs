@@ -29,22 +29,34 @@
         private void InitializeComponent()
         {
             pictureBox1 = new PictureBox();
+            button1 = new Button();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
             // 
             // pictureBox1
             // 
+            pictureBox1.ImageLocation = "C:\\Users\\Jopa\\source\\repos\\LyutiyShopSWAG\\LyutiyShopSWAG\\data\\BLY.gif";
             pictureBox1.Location = new Point(0, 0);
             pictureBox1.Name = "pictureBox1";
             pictureBox1.Size = new Size(640, 360);
             pictureBox1.TabIndex = 0;
             pictureBox1.TabStop = false;
             // 
+            // button1
+            // 
+            button1.Location = new Point(289, 366);
+            button1.Name = "button1";
+            button1.Size = new Size(94, 29);
+            button1.TabIndex = 1;
+            button1.Text = "AAAAAA";
+            button1.UseVisualStyleBackColor = true;
+            // 
             // AAAAAA
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(643, 413);
+            Controls.Add(button1);
             Controls.Add(pictureBox1);
             Name = "AAAAAA";
             Text = "Без звука...";
@@ -55,5 +67,6 @@
         #endregion
 
         private PictureBox pictureBox1;
+        private Button button1;
     }
 }
