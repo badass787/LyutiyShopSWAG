@@ -50,6 +50,7 @@
             voytiVButt.TabIndex = 1;
             voytiVButt.Text = "Войти...";
             voytiVButt.UseVisualStyleBackColor = true;
+            voytiVButt.Click += voytiVButt_Click;
             // 
             // beginning
             // 

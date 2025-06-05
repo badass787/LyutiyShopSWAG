@@ -16,5 +16,15 @@ namespace LyutiyShopSWAG
         {
             InitializeComponent();
         }
+
+        private void spisivaemButton_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void kopimButton_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -64,6 +64,7 @@
             kartaButton.TabIndex = 2;
             kartaButton.Text = "Оплатить картой";
             kartaButton.UseVisualStyleBackColor = true;
+            kartaButton.Click += kartaButton_Click;
             // 
             // NalButton
             // 
@@ -73,6 +74,7 @@
             NalButton.TabIndex = 3;
             NalButton.Text = "Оплатить наличными";
             NalButton.UseVisualStyleBackColor = true;
+            NalButton.Click += NalButton_Click;
             // 
             // bonusPAYbutton
             // 
@@ -82,6 +84,7 @@
             bonusPAYbutton.TabIndex = 4;
             bonusPAYbutton.Text = "Оплатить бонусами";
             bonusPAYbutton.UseVisualStyleBackColor = true;
+            bonusPAYbutton.Click += bonusPAYbutton_Click;
             // 
             // removeButton
             // 
@@ -91,6 +94,7 @@
             removeButton.TabIndex = 5;
             removeButton.Text = "Убрать что-то из корзины";
             removeButton.UseVisualStyleBackColor = true;
+            removeButton.Click += removeButton_Click;
             // 
             // oplataForm
             // 

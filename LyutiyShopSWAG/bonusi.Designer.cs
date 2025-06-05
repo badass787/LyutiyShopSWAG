@@ -43,6 +43,7 @@
             kopimButton.TabIndex = 9;
             kopimButton.Text = "Копим";
             kopimButton.UseVisualStyleBackColor = true;
+            kopimButton.Click += kopimButton_Click;
             // 
             // spisivaemButton
             // 
@@ -52,6 +53,7 @@
             spisivaemButton.TabIndex = 8;
             spisivaemButton.Text = "Списываем";
             spisivaemButton.UseVisualStyleBackColor = true;
+            spisivaemButton.Click += spisivaemButton_Click;
             // 
             // label1
             // 

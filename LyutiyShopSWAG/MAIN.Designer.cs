@@ -43,6 +43,7 @@
             goToGoodsButt.TabIndex = 0;
             goToGoodsButt.Text = "Пойти к стеллажам";
             goToGoodsButt.UseVisualStyleBackColor = true;
+            goToGoodsButt.Click += goToGoodsButt_Click;
             // 
             // goToPayButton
             // 
@@ -52,6 +53,7 @@
             goToPayButton.TabIndex = 1;
             goToPayButton.Text = "Пойти к кассе";
             goToPayButton.UseVisualStyleBackColor = true;
+            goToPayButton.Click += goToPayButton_Click;
             // 
             // goOUTbutton
             // 
@@ -61,6 +63,7 @@
             goOUTbutton.TabIndex = 2;
             goOUTbutton.Text = "Покинуть магазин";
             goOUTbutton.UseVisualStyleBackColor = true;
+            goOUTbutton.Click += goOUTbutton_Click;
             // 
             // entry
             // 

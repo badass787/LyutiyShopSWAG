@@ -44,6 +44,7 @@
             removeButton.TabIndex = 11;
             removeButton.Text = "Убрать что-то из корзины";
             removeButton.UseVisualStyleBackColor = true;
+            removeButton.Click += removeButton_Click;
             // 
             // PAYbutton
             // 
@@ -53,6 +54,7 @@
             PAYbutton.TabIndex = 10;
             PAYbutton.Text = "Оплатить натурой...";
             PAYbutton.UseVisualStyleBackColor = true;
+            PAYbutton.Click += PAYbutton_Click;
             // 
             // label1
             // 

@@ -16,5 +16,13 @@ namespace LyutiyShopSWAG
         {
             InitializeComponent();
         }
+
+        private void voytiVButt_Click(object sender, EventArgs e)
+        {
+            MAIN formMain = new MAIN();
+
+            formMain.ShowDialog();
+            
+        }
     }
 }
