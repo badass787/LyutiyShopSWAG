@@ -20,6 +20,7 @@ namespace LyutiyShopSWAG
         private void button1_Click(object sender, EventArgs e)
         {
             this.DialogResult = DialogResult.OK;
+            MessageBox.Show("Плохая концовка...");
             this.Close();
         }
     }

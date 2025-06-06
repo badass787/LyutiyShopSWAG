@@ -55,7 +55,6 @@ namespace LyutiyShopSWAG
             oplataBonusami oplata = new oplataBonusami();
             Vallet.Instance.SetStrategy(oplata);
             Vallet.Instance.SdelatOplatu();
-            CheckIfBOMJ();
         }
 
         private void OnBalance(object? sender, EventArgs e)
