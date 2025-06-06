@@ -20,7 +20,7 @@ namespace LyutiyShopSWAG
             Number = "1234 6523 1239 4734";
 
             Random rnd = new Random();
-            balance = rnd.Next(0, 99);
+            balance = rnd.Next(0, 20);
         }
 
         public bool flag = false;
@@ -42,7 +42,7 @@ namespace LyutiyShopSWAG
         {
             Number = "2631 2137 9043 2178";
             Random rnd = new Random();
-            balance = rnd.Next(0, 7000);
+            balance = rnd.Next(0, 100);
             CVC = rnd.Next(100, 1000);
         }
 

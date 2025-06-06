@@ -19,12 +19,16 @@ namespace LyutiyShopSWAG
 
         private void spisivaemButton_Click(object sender, EventArgs e)
         {
-
+            Vallet.Instance.BonusCard.flag = true;
+            MessageBox.Show("Вы выбрали списать");
+            this.Close();
         }
 
         private void kopimButton_Click(object sender, EventArgs e)
         {
-
+            Vallet.Instance.BonusCard.flag = false;
+            MessageBox.Show("Вы выбрали копить");
+            this.Close();
         }
     }
 }

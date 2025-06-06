@@ -13,20 +13,24 @@ namespace LyutiyShopSWAG
         {
             Shelves formShelv = new Shelves();
             var presenter = new StellajPresenter(formShelv);
+            this.Hide();
             formShelv.ShowDialog();
-            
+            this.Close();
         }
 
         private void goToPayButton_Click(object sender, EventArgs e)
         {
             oplataForm opl = new oplataForm();
             var presenter = new OplataPresenter(opl);
+            this.Hide();
             opl.ShowDialog();
+            this.Close();
             
         }
 
         private void goOUTbutton_Click(object sender, EventArgs e)
         {
+            ShoppingCart.Instance.ForcedCartCost();
             if (ShoppingCart.Instance.SummaPokupok == 0)
             {
                 MessageBox.Show("Вы успешно покинули магазин. Конец.");

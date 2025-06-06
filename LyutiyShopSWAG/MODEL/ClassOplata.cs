@@ -21,6 +21,7 @@ namespace LyutiyShopSWAG
             {
                 ShoppingCart.Instance.SummaPokupok = 0;
                 Vallet.Instance.Card.balance = new_balance;
+                ShoppingCart.Instance.ClearCart();
                 MessageBox.Show("Вы оплатили картой");
             }
             else
@@ -40,6 +41,7 @@ namespace LyutiyShopSWAG
             {
                 ShoppingCart.Instance.SummaPokupok = 0;
                 Vallet.Instance.Nalichka = new_balance;
+                ShoppingCart.Instance.ClearCart();
                 MessageBox.Show("Вы оплатили наличкой");
             }
             else
@@ -47,7 +49,7 @@ namespace LyutiyShopSWAG
                 ShoppingCart.Instance.SummaPokupok = Math.Abs(new_balance);
                 Vallet.Instance.Nalichka = 0;
             }
-
+            
         }
     }
 
@@ -65,6 +67,7 @@ namespace LyutiyShopSWAG
             {
                 Vallet.Instance.BonusCard.balance = Math.Abs(new_balance);
                 ShoppingCart.Instance.SummaPokupok = 0;
+                ShoppingCart.Instance.ClearCart();
                 MessageBox.Show("Вам удалось оплатить бонусами");
             }
         }

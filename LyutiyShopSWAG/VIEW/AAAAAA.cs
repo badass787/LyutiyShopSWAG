@@ -10,19 +10,17 @@ using System.Windows.Forms;
 
 namespace LyutiyShopSWAG
 {
-    public partial class beginning : Form
+    public partial class AAAAAA : Form
     {
-        public beginning()
+        public AAAAAA()
         {
             InitializeComponent();
         }
 
-        private void voytiVButt_Click(object sender, EventArgs e)
+        private void button1_Click(object sender, EventArgs e)
         {
-            MAIN formMain = new MAIN();
-
-            formMain.ShowDialog();
-            
+            this.DialogResult = DialogResult.OK;
+            this.Close();
         }
     }
 }

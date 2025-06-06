@@ -10,32 +10,38 @@ using System.Windows.Forms;
 
 namespace LyutiyShopSWAG
 {
+
     public partial class oplataForm : Form, IOplataView
     {
         public event EventHandler PayByCardClicked;
         public event EventHandler PayByCashClicked;
-        public event EventHandler PayByBonusClicked;
-        public event EventHandler CancelClicked;
+
+        public event EventHandler balClicked;
+        public event EventHandler BOMJ;
+
+
 
         public oplataForm()
         {
             InitializeComponent();
+            BOMJ += OnBOMJ;
         }
 
         private void kartaButton_Click(object sender, EventArgs e)
         {
+            bonusi form2 = new bonusi();
+            form2.ShowDialog();
             PayByCardClicked?.Invoke(this, EventArgs.Empty);
         }
 
         private void NalButton_Click(object sender, EventArgs e)
         {
+            bonusi form2 = new bonusi();
+            form2.ShowDialog();
             PayByCashClicked?.Invoke(this, EventArgs.Empty);
         }
 
-        private void bonusPAYbutton_Click(object sender, EventArgs e)
-        {
-            PayByBonusClicked?.Invoke(this, EventArgs.Empty);
-        }
+
 
         private void removeButton_Click(object sender, EventArgs e)
         {
@@ -44,14 +50,35 @@ namespace LyutiyShopSWAG
             shelves.ShowDialog();
         }
 
-        public void ShowMessage(string message)
+        private void balansButt_Click(object sender, EventArgs e)
         {
-            MessageBox.Show(message);
+            balClicked?.Invoke(this, EventArgs.Empty);
         }
 
-        public void CloseForm()
+        private void returnToMain_Click(object sender, EventArgs e)
         {
+            MAIN form1 = new MAIN();
+            this.Hide();
+            form1.ShowDialog();
             this.Close();
+        }
+
+        private void OnBOMJ(object? sender, EventArgs e)
+        {
+            oplataBOMJ bomjForm = new oplataBOMJ();
+            this.Hide();
+            bomjForm.ShowDialog();
+            this.Close();
+        }
+
+        public void TriggerBOMJ()
+        {
+            BOMJ?.Invoke(this, EventArgs.Empty);
+        }
+
+        private void oplataForm_Load(object sender, EventArgs e)
+        {
+
         }
     }
 

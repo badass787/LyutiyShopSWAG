@@ -10,10 +10,11 @@ namespace LyutiyShopSWAG
     {
         event EventHandler PayByCardClicked;
         event EventHandler PayByCashClicked;
-        event EventHandler PayByBonusClicked;
-        event EventHandler CancelClicked;
-
         
+        event EventHandler balClicked;
+        event EventHandler BOMJ;
+
+        void TriggerBOMJ();
     }
     public interface IShelvesView
     {
@@ -44,8 +45,9 @@ namespace LyutiyShopSWAG
         event EventHandler AddCarrotsPackedClicked;
         event EventHandler RemoveCarrotsPackedClicked;
 
-        event EventHandler LeaveToKassaClicked;
+        
         event EventHandler WeighClicked;
+        event EventHandler countSummaClicked;
 
     }
 

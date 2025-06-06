@@ -1,10 +1,9 @@
-ID,Name,Price,Type,Weight,WeightMin,WeightMax,Amount
-1,Tomato,20,measurable,,50,150,100
-2,Cucumber,15,measurable,,80,200,50
-3,Potato,10,measurable,,70,250,200
-4,Carrot,12,measurable,,40,120,70
-5,Onion,9,measurable,,60,160,120
-6,Cabbage,25,measurable,,500,1000,30
-7,Tomato Packed,30,packed,300,,,60
-8,Potato Packed,28,packed,800,,,45
-9,Carrot Packed,26,packed,400,,,35
+1,Tomato,20,measurable,,50,150,4
+2,Cucumber,15,measurable,,80,200,18
+3,Potato,10,measurable,,70,250,49
+4,Carrot,12,measurable,,40,120,18
+5,Onion,9,measurable,,60,160,31
+6,Cabbage,25,measurable,,500,1000,4
+7,Tomato Packed,30,packed,300,,,10
+8,Potato Packed,28,packed,800,,,6
+9,Carrot Packed,26,packed,400,,,5

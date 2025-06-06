@@ -70,6 +70,7 @@
             potatoesLabel = new Label();
             carrotsLabel = new Label();
             toolTip1 = new ToolTip(components);
+            countSumma = new Button();
             ((System.ComponentModel.ISupportInitialize)tomato).BeginInit();
             ((System.ComponentModel.ISupportInitialize)cucumber).BeginInit();
             ((System.ComponentModel.ISupportInitialize)cabbage).BeginInit();
@@ -173,7 +174,7 @@
             // 
             // weighting
             // 
-            weighting.Location = new Point(238, 472);
+            weighting.Location = new Point(198, 494);
             weighting.Name = "weighting";
             weighting.Size = new Size(100, 50);
             weighting.TabIndex = 9;
@@ -183,7 +184,7 @@
             // 
             // leaveToKassaButton
             // 
-            leaveToKassaButton.Location = new Point(521, 472);
+            leaveToKassaButton.Location = new Point(561, 494);
             leaveToKassaButton.Name = "leaveToKassaButton";
             leaveToKassaButton.Size = new Size(100, 50);
             leaveToKassaButton.TabIndex = 10;
@@ -402,98 +403,109 @@
             // tomatoLabel
             // 
             tomatoLabel.AutoSize = true;
-            tomatoLabel.Font = new Font("Segoe UI", 17F);
-            tomatoLabel.Location = new Point(119, 171);
+            tomatoLabel.Font = new Font("Segoe UI", 14F);
+            tomatoLabel.Location = new Point(119, 177);
             tomatoLabel.Name = "tomatoLabel";
-            tomatoLabel.Size = new Size(33, 40);
+            tomatoLabel.Size = new Size(27, 32);
             tomatoLabel.TabIndex = 38;
             tomatoLabel.Text = "0";
             // 
             // cucLable
             // 
             cucLable.AutoSize = true;
-            cucLable.Font = new Font("Segoe UI", 17F);
-            cucLable.Location = new Point(419, 171);
+            cucLable.Font = new Font("Segoe UI", 14F);
+            cucLable.Location = new Point(419, 174);
             cucLable.Name = "cucLable";
-            cucLable.Size = new Size(33, 40);
+            cucLable.Size = new Size(27, 32);
             cucLable.TabIndex = 39;
             cucLable.Text = "0";
             // 
             // potatoLabel
             // 
             potatoLabel.AutoSize = true;
-            potatoLabel.Font = new Font("Segoe UI", 17F);
-            potatoLabel.Location = new Point(706, 171);
+            potatoLabel.Font = new Font("Segoe UI", 14F);
+            potatoLabel.Location = new Point(706, 174);
             potatoLabel.Name = "potatoLabel";
-            potatoLabel.Size = new Size(33, 40);
+            potatoLabel.Size = new Size(27, 32);
             potatoLabel.TabIndex = 40;
             potatoLabel.Text = "0";
             // 
             // carrotLabel
             // 
             carrotLabel.AutoSize = true;
-            carrotLabel.Font = new Font("Segoe UI", 17F);
-            carrotLabel.Location = new Point(119, 292);
+            carrotLabel.Font = new Font("Segoe UI", 14F);
+            carrotLabel.Location = new Point(119, 298);
             carrotLabel.Name = "carrotLabel";
-            carrotLabel.Size = new Size(33, 40);
+            carrotLabel.Size = new Size(27, 32);
             carrotLabel.TabIndex = 41;
             carrotLabel.Text = "0";
             // 
             // onioLabel
             // 
             onioLabel.AutoSize = true;
-            onioLabel.Font = new Font("Segoe UI", 17F);
-            onioLabel.Location = new Point(419, 292);
+            onioLabel.Font = new Font("Segoe UI", 14F);
+            onioLabel.Location = new Point(419, 295);
             onioLabel.Name = "onioLabel";
-            onioLabel.Size = new Size(33, 40);
+            onioLabel.Size = new Size(27, 32);
             onioLabel.TabIndex = 42;
             onioLabel.Text = "0";
             // 
             // cabbageLabel
             // 
             cabbageLabel.AutoSize = true;
-            cabbageLabel.Font = new Font("Segoe UI", 17F);
-            cabbageLabel.Location = new Point(706, 292);
+            cabbageLabel.Font = new Font("Segoe UI", 14F);
+            cabbageLabel.Location = new Point(706, 295);
             cabbageLabel.Name = "cabbageLabel";
-            cabbageLabel.Size = new Size(33, 40);
+            cabbageLabel.Size = new Size(27, 32);
             cabbageLabel.TabIndex = 43;
             cabbageLabel.Text = "0";
             // 
             // tomatoesLabel
             // 
             tomatoesLabel.AutoSize = true;
-            tomatoesLabel.Font = new Font("Segoe UI", 17F);
-            tomatoesLabel.Location = new Point(119, 427);
+            tomatoesLabel.Font = new Font("Segoe UI", 14F);
+            tomatoesLabel.Location = new Point(119, 433);
             tomatoesLabel.Name = "tomatoesLabel";
-            tomatoesLabel.Size = new Size(33, 40);
+            tomatoesLabel.Size = new Size(27, 32);
             tomatoesLabel.TabIndex = 44;
             tomatoesLabel.Text = "0";
             // 
             // potatoesLabel
             // 
             potatoesLabel.AutoSize = true;
-            potatoesLabel.Font = new Font("Segoe UI", 17F);
-            potatoesLabel.Location = new Point(419, 427);
+            potatoesLabel.Font = new Font("Segoe UI", 14F);
+            potatoesLabel.Location = new Point(419, 433);
             potatoesLabel.Name = "potatoesLabel";
-            potatoesLabel.Size = new Size(33, 40);
+            potatoesLabel.Size = new Size(27, 32);
             potatoesLabel.TabIndex = 45;
             potatoesLabel.Text = "0";
             // 
             // carrotsLabel
             // 
             carrotsLabel.AutoSize = true;
-            carrotsLabel.Font = new Font("Segoe UI", 17F);
-            carrotsLabel.Location = new Point(706, 427);
+            carrotsLabel.Font = new Font("Segoe UI", 14F);
+            carrotsLabel.Location = new Point(706, 430);
             carrotsLabel.Name = "carrotsLabel";
-            carrotsLabel.Size = new Size(33, 40);
+            carrotsLabel.Size = new Size(27, 32);
             carrotsLabel.TabIndex = 46;
             carrotsLabel.Text = "0";
+            // 
+            // countSumma
+            // 
+            countSumma.Location = new Point(385, 494);
+            countSumma.Name = "countSumma";
+            countSumma.Size = new Size(100, 50);
+            countSumma.TabIndex = 47;
+            countSumma.Text = "Рассчитать сумму";
+            countSumma.UseVisualStyleBackColor = true;
+            countSumma.Click += countSumma_Click;
             // 
             // Shelves
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(886, 556);
+            Controls.Add(countSumma);
             Controls.Add(carrotsLabel);
             Controls.Add(potatoesLabel);
             Controls.Add(tomatoesLabel);
@@ -535,7 +547,6 @@
             Controls.Add(tomato);
             Name = "Shelves";
             Text = "Стеллажи";
-            Load += Shelves_Load;
             ((System.ComponentModel.ISupportInitialize)tomato).EndInit();
             ((System.ComponentModel.ISupportInitialize)cucumber).EndInit();
             ((System.ComponentModel.ISupportInitialize)cabbage).EndInit();
@@ -591,5 +602,6 @@
         private Label potatoesLabel;
         private Label carrotsLabel;
         private ToolTip toolTip1;
+        private Button countSumma;
     }
 }

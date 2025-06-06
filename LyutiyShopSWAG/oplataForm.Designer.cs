@@ -32,15 +32,16 @@
             label1 = new Label();
             kartaButton = new Button();
             NalButton = new Button();
-            bonusPAYbutton = new Button();
             removeButton = new Button();
+            returnToMain = new Button();
+            balansButt = new Button();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
             // 
             // pictureBox1
             // 
             pictureBox1.ImageLocation = "C:\\Users\\Jopa\\source\\repos\\LyutiyShopSWAG\\LyutiyShopSWAG\\data\\cassier.jpg";
-            pictureBox1.Location = new Point(14, 67);
+            pictureBox1.Location = new Point(14, 78);
             pictureBox1.Name = "pictureBox1";
             pictureBox1.Size = new Size(571, 366);
             pictureBox1.TabIndex = 0;
@@ -50,7 +51,7 @@
             // 
             label1.AutoSize = true;
             label1.Font = new Font("Segoe UI", 20F);
-            label1.Location = new Point(74, 9);
+            label1.Location = new Point(80, 9);
             label1.Name = "label1";
             label1.Size = new Size(458, 46);
             label1.TabIndex = 1;
@@ -58,9 +59,9 @@
             // 
             // kartaButton
             // 
-            kartaButton.Location = new Point(14, 450);
+            kartaButton.Location = new Point(37, 450);
             kartaButton.Name = "kartaButton";
-            kartaButton.Size = new Size(120, 50);
+            kartaButton.Size = new Size(100, 50);
             kartaButton.TabIndex = 2;
             kartaButton.Text = "Оплатить картой";
             kartaButton.UseVisualStyleBackColor = true;
@@ -68,47 +69,59 @@
             // 
             // NalButton
             // 
-            NalButton.Location = new Point(151, 450);
+            NalButton.Location = new Point(143, 450);
             NalButton.Name = "NalButton";
-            NalButton.Size = new Size(120, 50);
+            NalButton.Size = new Size(100, 50);
             NalButton.TabIndex = 3;
             NalButton.Text = "Оплатить наличными";
             NalButton.UseVisualStyleBackColor = true;
             NalButton.Click += NalButton_Click;
             // 
-            // bonusPAYbutton
-            // 
-            bonusPAYbutton.Location = new Point(303, 450);
-            bonusPAYbutton.Name = "bonusPAYbutton";
-            bonusPAYbutton.Size = new Size(120, 50);
-            bonusPAYbutton.TabIndex = 4;
-            bonusPAYbutton.Text = "Оплатить бонусами";
-            bonusPAYbutton.UseVisualStyleBackColor = true;
-            bonusPAYbutton.Click += bonusPAYbutton_Click;
-            // 
             // removeButton
             // 
-            removeButton.Location = new Point(465, 450);
+            removeButton.Location = new Point(461, 450);
             removeButton.Name = "removeButton";
-            removeButton.Size = new Size(120, 50);
+            removeButton.Size = new Size(100, 50);
             removeButton.TabIndex = 5;
-            removeButton.Text = "Убрать что-то из корзины";
+            removeButton.Text = "К корзине...";
             removeButton.UseVisualStyleBackColor = true;
             removeButton.Click += removeButton_Click;
+            // 
+            // returnToMain
+            // 
+            returnToMain.Location = new Point(355, 450);
+            returnToMain.Name = "returnToMain";
+            returnToMain.Size = new Size(100, 50);
+            returnToMain.TabIndex = 6;
+            returnToMain.Text = "Уйти от кассы";
+            returnToMain.UseVisualStyleBackColor = true;
+            returnToMain.Click += returnToMain_Click;
+            // 
+            // balansButt
+            // 
+            balansButt.Location = new Point(249, 450);
+            balansButt.Name = "balansButt";
+            balansButt.Size = new Size(100, 50);
+            balansButt.TabIndex = 7;
+            balansButt.Text = "Показать баланс";
+            balansButt.UseVisualStyleBackColor = true;
+            balansButt.Click += balansButt_Click;
             // 
             // oplataForm
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(608, 517);
+            ClientSize = new Size(600, 533);
+            Controls.Add(balansButt);
+            Controls.Add(returnToMain);
             Controls.Add(removeButton);
-            Controls.Add(bonusPAYbutton);
             Controls.Add(NalButton);
             Controls.Add(kartaButton);
             Controls.Add(label1);
             Controls.Add(pictureBox1);
             Name = "oplataForm";
             Text = "У кассы";
+            Load += oplataForm_Load;
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ResumeLayout(false);
             PerformLayout();
@@ -120,7 +133,8 @@
         private Label label1;
         private Button kartaButton;
         private Button NalButton;
-        private Button bonusPAYbutton;
         private Button removeButton;
+        private Button returnToMain;
+        private Button balansButt;
     }
 }
